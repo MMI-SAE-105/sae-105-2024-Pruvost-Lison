@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : Pruvost
+- PRÉNOM : Lison
+- GROUPE : C1
+- URL du site : http://lionimation.lison-pruvost.fr/  
+- URL FIGMA : https://www.figma.com/design/XE5qUk6p6suXldYcvCdoYr/Untitled?node-id=1-3&t=MZ4ls0MFrzHktJsv-1
 
 ## Sujet
 
