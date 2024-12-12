@@ -66,4 +66,8 @@ main {
             }
         }
     }
+
+    & input{
+        height: 32px;
+    }
 }

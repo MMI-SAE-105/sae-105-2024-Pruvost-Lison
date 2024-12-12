@@ -1,0 +1,22 @@
+.team-members,
+.partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    width: calc(100vw - 32px);
+    margin: 32px 0;
+
+    & .partner {
+        display: grid;
+        place-items: center;
+    }
+
+    & .member,
+    & .partner {
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
