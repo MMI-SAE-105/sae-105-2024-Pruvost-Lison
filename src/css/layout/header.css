@@ -1,0 +1,39 @@
+header {
+    display: grid;
+    grid-template-rows: 56px 18px;
+    width: 100%;
+    height: 86px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: var(--header-color);
+}
+
+#btnmenu {
+    display: grid;
+    padding: 0;
+    place-items: center;
+    width: 44px;
+    z-index: 100;
+    height: 44px;
+    transition: all 0.5s;
+    background: url(../../../assets/menu.svg) 100% center / cover no-repeat;
+}
+
+.deco {
+    width: 100%;
+    height: 18px;
+    background: url(../../../assets/headercadrier.webp) 100% center / cover no-repeat;
+}
+
+.logo {
+    background-color: red;
+    height: 50px;
+}
