@@ -1,0 +1,46 @@
+footer {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 75px 1fr 150px 170px;
+    background-color: var(--jaune);
+
+    & .footer-vague {
+        width: 100vw;
+        height: 80px;
+        background: url(../../../assets/vaguefooter.svg) top center / 100%  no-repeat;
+    }
+
+    & .footer-menu {
+        padding: 32px 32px ;
+        & li{
+            list-style: none;
+            padding: 16px;
+            & a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: var(--header-color);
+                font-weight: 700;
+            }
+        }
+
+    }
+
+    & .footer-social {
+        width: 100vw;
+        text-align: center;
+        & .social-icons{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+
+    & .footer-logo {
+        width: 100vw;
+        text-align: center;
+        & img{
+            width: 80%;
+            height: auto;
+        }
+    }
+}

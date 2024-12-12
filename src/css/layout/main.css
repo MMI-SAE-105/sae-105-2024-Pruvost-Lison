@@ -1,0 +1,73 @@
+main {
+    width: 100vw;
+
+    & section.hero {
+        position: relative;
+
+        margin-top: 56px;
+
+        & .bloc-img {
+            width: 100vw;
+            height: 474px;
+            overflow: hidden;
+            &.invites, &.home{
+                & img{
+                    width: 200px;
+                    height: auto;
+                }
+                & h1{
+                    margin-top: 0;
+                }
+            }      
+             & .center-bloc{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: grid;
+            place-items: center;
+            z-index: 2;
+            & h1{
+                font-size: 37px;
+                text-transform: uppercase;
+                color: var(--header-color);
+                &.negatif{
+                    color : white;
+                }
+            }
+                    }
+
+            & img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                z-index: 1;
+
+            }
+        }
+    }
+
+    .global-content {
+        width: 100vw;
+        padding: 16px;
+
+        &.programmation,
+        &.festival {
+            & .caroussel {
+                margin-left: -16px;
+                margin-right: -16px;
+            }
+        }
+
+        & .bloc-img {
+            overflow: hidden;
+            width: 100%;
+            max-height: 245px;
+
+            & img {
+                object-fit: cover;
+            }
+        }
+    }
+}

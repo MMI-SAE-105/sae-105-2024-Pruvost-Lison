@@ -17,9 +17,17 @@
 @import url("../component/hero.css");
 
 /* importation */
+@import url("../layout/main.css");
 @import url("../layout/header.css");
 @import url("../layout/footer.css");
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
 
 html,
 body {
@@ -38,6 +46,8 @@ body {
     font-size: 14px;
 }
 
+/* style commun aux pages */
+
 h1,
 h2 {
     font-family: "Chewy", system-ui;
@@ -46,3 +56,35 @@ h2 {
     /* text-transform: uppercase; */
 }
 
+a {
+    color: var(--header-color);
+
+    & :focus,
+    :hover,
+    :visited {
+        color: var(--jaune);
+    }
+}
+
+li {
+    list-style: none;
+    padding: 8px 0;
+}
+
+
+/*classes de couleurs du theme pour certains blocs*/
+.bg-bleu {
+    background-color: var(--bleu);
+}
+
+.bg-bleu-hero {
+    background-color: var(--bleu-hero);
+}
+
+.bg-rose {
+    background-color: var(--rose);
+}
+
+.bg-jaune {
+    background-color: var(--jaune);
+}
