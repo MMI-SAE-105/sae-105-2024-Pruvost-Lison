@@ -56,14 +56,6 @@ main {
         padding: 16px;
         background: url(../../../assets/group4.webp) right center / 20% no-repeat;
 
-        &.programmation,
-        &.festival {
-            & .caroussel {
-                margin-left: -16px;
-                margin-right: -16px;
-            }
-        }
-
         & .bloc-img {
             overflow: hidden;
             width: 100%;

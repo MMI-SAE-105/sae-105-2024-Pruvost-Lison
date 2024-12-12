@@ -8,6 +8,34 @@
     flex-wrap: nowrap;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: start;
+}
+
+.align-end {
+    align-items: end;
+}
+
+.flex-dir-h {
+    flex-direction: row;
+}
+
+.flex-dir-v {
+    flex-direction: column;
+}
+
 .grid,
 .d-grid {
     display: grid;

@@ -1,0 +1,53 @@
+.caroussel {
+    width: 100vw;
+    overflow-x: hidden;
+    margin-left: -16px;
+    margin-right: -16px;
+
+    & .container {
+        width: 100%;
+        height: 331px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        position: relative;
+
+    }
+}
+
+
+
+.x-mandatory {
+    scroll-snap-type: x mandatory;
+}
+
+
+.x-scroll ul.wrapper {
+    height: 316px;
+    width: calc(221px * 3);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: none;
+
+    & .element {
+        width: 221px;
+        height: 316px;
+        scroll-margin: 10px;
+        scroll-snap-align: start;
+        scroll-snap-stop: normal;
+        display: block;
+
+        & img {
+            object-fit: cover;
+            height: auto;
+            width: 221px;
+
+        }
+    }
+
+
+}
+
+.x-scroll .element {
+    /* border: 1px solid #dedede; */
+}
