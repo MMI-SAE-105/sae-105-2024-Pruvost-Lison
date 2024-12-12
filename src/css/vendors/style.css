@@ -4,10 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chewy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* import du normalize */
-@import url("normalize.css");
+/* @import url("normalize.css"); */
 
 /* importation variables */
 @import url("../utils/variables.css");
+@import url("../utils/structure.css");
 
 /* importation component */
 @import url("../component/menu.css");
@@ -45,14 +46,3 @@ h2 {
     /* text-transform: uppercase; */
 }
 
-.flex {
-    display: flex;
-}
-
-.flex-nowrap {
-    flex-wrap: nowrap;
-}
-
-.grid {
-    display: grid;
-}

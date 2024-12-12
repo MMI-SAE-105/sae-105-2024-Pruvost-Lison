@@ -1,0 +1,11 @@
+.flex, .d-flex {
+    display: flex;
+}
+
+.flex-nowrap,.nowrap {
+    flex-wrap: nowrap;
+}
+
+.grid, .d-grid {
+    display: grid;
+}

@@ -1,33 +1,66 @@
 #panel {
     background-color: #4B4A45;
     position: fixed;
-    bottom: 0rem;
-    top: 0rem;
-    z-index: 100;
-    width: 100vw;
+    left: 0;
+    z-index: 2;
+    width: 0;
     height: 100vh;
     transition: 0.6s;
-    right: 100%;
-    padding: 1rem;
     font-size: 1.4em;
+    opacity: 0;
+
+    & nav {
+        & ul {
+            padding: 0;
+
+            & li {
+                list-style: none;
+                padding: 16px;
+                text-align: center;
+
+
+                & a {
+                    color: var(--rose);
+                    text-decoration: none;
+
+                    &:focus,
+                    :hover,
+                    :visited {
+                        color: var(--jaune);
+                    }
+                }
+            }
+        }
+    }
+
 }
+
+.panel-header {
+    display: flex;
+    justify-content: end;
+    height: 86px;
+    padding: 16px;
+
+    & .btnclose {
+        position: absolute;
+        height: 44px;
+        width: 44px;
+        z-index: 3;
+        padding: 0;
+        background: url(../../../assets/close_round.svg) 100% center / cover no-repeat;
+        margin: 0;
+    }
+}
+
 
 #panel.go-right {
+    width: 100vw;
     right: 1rem !important;
-}
-
-
-
-.btnclose {
-    height: 44px;
-    width: 44px;
-    background: red;
-    transition: all 0.5s;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    padding: 0;
-    background: url(../../../assets/close_round.svg) 100% center / cover no-repeat;
+    right: 0;
+    left: 0;
+    bottom: 0rem;
+    top: 0rem;
+    opacity: 1;
 }
 
 .inte div *,
