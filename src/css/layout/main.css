@@ -43,6 +43,9 @@ main {
                 height: auto;
                 object-fit: cover;
                 z-index: 1;
+                &.mi-opa{
+                    opacity: 0.5;
+                }
 
             }
         }
@@ -51,6 +54,7 @@ main {
     .global-content {
         width: 100vw;
         padding: 16px;
+        background: url(../../../assets/group4.webp) right center / 20% no-repeat;
 
         &.programmation,
         &.festival {
