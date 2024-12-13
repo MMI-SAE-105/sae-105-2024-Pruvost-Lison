@@ -17,16 +17,16 @@
     <header class="header">
         <div class="menu">
             <div class="logo">
-                <a href="index.html"><img src="assets/logo.png" alt="retour accueil"></a>
-            </div>
-            <button id="btnmenu" class="menu-toggle"></button>
+                <a href="index.html"><img src="assets/logo.png" alt="Logo du Festival Lionimation - Retour à l'accueil"></a>
+            </div> 
+            <button id="btnmenu" class="menu-toggle" aria-expanded="false" aria-controls="panel" aria-label="Ouvrir le menu"></button>
         </div>
         <div class="deco"></div>
     </header>
 
     <aside id="panel">
         <div class="panel-header"><button class="btnclose" id="hide-menu" /></div>
-        <nav>
+        <nav role="navigation">
             <ul>
                 <li><a href="festival.html">Le festival</a></li>
                 <li><a href="programmation.html">Programmation</a></li>
@@ -48,7 +48,7 @@
             </div>
         </section>
         <div class="global-content">
-            <section class="intro">
+            <section class="intro" aria-labelledby="intro-title">
                 <p>Bienvenue au Lionimation Festival, le rendez-vous incontournable de l'audiovisuel à Belfort, dédié à
                     l'animation sous toutes ses formes ! Pendant une semaine, plongez dans un voyage visuel unique à
                     travers
@@ -56,17 +56,17 @@
                 <a href="festival.html" class="button arrow">En savoir plus</a>
             </section>
 
-            <section class="details">
-                <h2>Période d'ouverture</h2>
+            <section class="details" aria-labelledby="details-title">
+                <h2 id="details-title">Période d'ouverture</h2>
                 <p>Du lundi 7 au samedi 13 juillet 2025</p>
 
                 <h2>Venez célébrer l'art de l'animation avec nous</h2>
                 <a href="#" class="button">Accéder à la billetterie</a>
             </section>
 
-            <section class="extras">
+            <section class="extras" aria-labelledby="extras-title">
                 <div class="card pa-1 mt-2 bg-rose">
-                    <h3>Explorez le programme</h3>
+                    <h3 id="extras-title">Explorez le programme</h3>
                     <p>Préparez-vous à vivre une semaine pleine de magie et de créativité</p>
                     <a href="programmation.html" class="button arrow">En savoir plus</a>
                 </div>
