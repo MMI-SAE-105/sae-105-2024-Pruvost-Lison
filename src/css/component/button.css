@@ -28,3 +28,52 @@ a.button.arrow {
     border: 2px solid var(--header-color);
     background: url(../../../assets/arrow-right.svg) 6% center / 31px auto no-repeat;
 }
+
+.cta a.arrow {
+    display: inline-block;
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    background: url('../../../assets/arrow-right.svg') 0 center / 20px auto no-repeat;
+}
+
+.cta a.arrow:hover {
+    color: var(--header-color);
+}
+
+/*Ajout des 2 boutons*/
+#nextBtn,
+#prevBtn {
+    width: 44px;
+    height: 44px;
+    background-color: var(--rose);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    /* Pour rendre le bouton rond */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#nextBtn::after,
+#prevBtn::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(45deg);
+}
+
+#prevBtn::after {
+    transform: rotate(-135deg);
+}
+
+#nextBtn:hover,
+#prevBtn:hover {
+    background-color: darken(var(--rose), 10%);
+}
